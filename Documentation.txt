@@ -1,0 +1,102 @@
+-------------------------------------------------------RPS-------------------------------------------------RPS-----------------------------------------RPS----------------------
+Below is a sample requirement document outlining the key components and specifications for such a project:
+
+Hash Cracking in Python Requirement Document
+
+Project Overview
+
+Purpose
+The purpose of this project is to develop a Python-based tool for cracking hash functions. 
+This tool will be capable of brute-force and dictionary-based attacks to recover plaintext passwords from hashed representations.
+
+Scope
+This project aims to provide a command-line interface (CLI) for hash cracking, supporting various hash algorithms and attack methods. 
+The tool should be extensible and user-friendly, allowing security professionals and penetration testers to assess the strength of passwords and hash security.
+
+Functional Requirements
+1. Hash Algorithm Support
+The tool must support the following hash algorithms:
+    'blake2b', 
+    'blake2s', 
+    'md5', 
+    'sha1', 
+    'sha224', 
+    'sha256', 
+    'sha384', 
+    'sha3_224', 
+    'sha3_256', 
+    'sha3_384', 
+    'sha3_512', 
+    'sha512',
+    'crc32',
+    'Adler-32',
+    'xxHash'
+    'bcrypt' (optional)
+2. Attack Methods
+The tool must implement the following attack methods:
+
+Brute-force attack
+Dictionary-based attack
+
+3. Input Handling
+The tool should accept the following inputs:
+
+Target hash to be cracked
+Dictionary file for dictionary-based attacks (optional)
+Password length range for brute-force attacks (optional)
+Custom character set for brute-force attacks (optional)
+
+4. Output
+The tool should provide the following output:
+
+Cracked password (if successful)
+Success/failure status
+Time taken for the cracking attempt
+
+5. User Interface
+The tool should provide a command-line interface with clear usage instructions and help documentation.
+
+6. Extensibility
+The tool should be designed in a modular and extensible manner, allowing for the addition of new hash algorithms and attack methods in the future.
+
+Non-functional Requirements
+
+1. Performance
+The tool should be capable of efficient hash cracking, with the ability to process a reasonable number of hashes within a reasonable time frame.
+
+2. Security
+The tool must not store or log any passwords or hashes used during the cracking process. It should adhere to ethical hacking guidelines and ensure user privacy.
+
+3. Compatibility
+The tool should be compatible with Python 3.6 or higher.
+
+4. Error Handling
+The tool should provide meaningful error messages and gracefully handle exceptions to prevent crashes.
+
+5. Logging
+The tool may optionally support logging for debugging and auditing purposes.
+
+Constraints
+
+This tool is intended for ethical hacking and security assessment purposes only. It should not be used for any illegal or unauthorized activities.
+The tool should not be designed to facilitate password cracking for malicious purposes.
+
+Dependencies
+The tool may use third-party libraries such as hashlib for hash algorithms, argparse for command-line parsing, and any additional libraries as needed.
+
+Milestones and Timeline
+Define project milestones and estimated completion dates.
+
+Documentation
+Provide detailed documentation on how to install, configure, and use the tool.
+
+Testing
+Define test cases and conduct thorough testing to ensure the tool's functionality and security.
+
+Maintenance and Support
+Outline plans for ongoing maintenance and support, including bug fixes and updates.
+
+Conclusion
+This requirement document outlines the scope and specifications for developing a Python-based hash cracking tool. 
+It serves as a guideline for the project's development and should be referred to throughout the development lifecycle.
+
